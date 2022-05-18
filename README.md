@@ -21,3 +21,5 @@ I.T. 11/12 project involving saving data on an SQL for easier user access.
 - Customizing Coffee
 - Customer Seat Tracker
 - Admin Panel (Testing orders, manually updating/ordering inventory, adding/removing products, etc.)
+![rsz_1project_mocha_logo](https://user-images.githubusercontent.com/25315537/169150870-2b484ba8-da72-441d-ac18-94a2c281f052.png)
+
