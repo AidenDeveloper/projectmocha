@@ -13,16 +13,20 @@ c = conn.cursor()
 #c.execute("INSERT INTO employees VALUES ('AidenDev', 'finngaming123', 150)")
 
 conn.commit()
-
-user = input("Enter username")
-passs = input("Enter password")
+funny = input("Type Register or Login: ")
+if funny.lower() == "login":
+    user = input("Enter username")
+    passs = input("Enter password")
+    a = f"SELECT username from employees WHERE username='{user}' AND password = '{passs}';"
+    c.execute(a)
+    if not c.fetchone():
+        print("Invalid")
+    else:
+        print("gaming")  
 #emp_1 = Account(username, password, 150)
-a = c.execute("SELECT * FROM employees WHERE username='{}' AND password='{}'".format(user,passs))
-emptylist = '[]'
-if a == emptylist:
-    print("Invalid")
-else:
-    print(c.fetchall())    
+
+
+  
 
 conn.commit()
 
